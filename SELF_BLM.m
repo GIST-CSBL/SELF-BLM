@@ -217,9 +217,9 @@ end
  % v : drug-target interaction matrix
  % we take the largest value between targetPred and compPred
  
-v = textread('validation_set5_en.txt');
+v = textread('validation_set_en.txt');
 v = v(:,2:size(v,2));
-v = unlabeledY;
+
  maxPred = max(targetPred',compPred);
 
 pred =[];
