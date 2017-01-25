@@ -1,4 +1,6 @@
-%%%%%%%%%%%%%%%%%%%%% Generate negative labeling %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%% Generate negative labeling %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% To use k-medodis clustering, the Statistics and Machine Learning Toolbox is used.
+% k-medodis clustering 
 % N : divid integer  
 % target : similiarity matrix of target
 % com : simliarity matrix of compound
