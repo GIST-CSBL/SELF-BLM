@@ -1,4 +1,4 @@
-%%%%%%%%%%%%%%%%%%%%% Generate negative labeling %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%% Generate negative labeling %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % N : divid integer  
 % target : similiarity matrix of target
 % com : simliarity matrix of compound
@@ -8,9 +8,9 @@
 % following URL http://cbio.mines-paristech.fr/~yyamanishi/bipartitelocal/
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-target = textread('e_simmat_dg2.txt');
-comp = textread('e_simmat_dc2.txt');
-unlabeledY = textread('e_admat_dgc2.txt');
+target = textread('gpcr_simmat_dg2.txt');
+comp = textread('gpcr_simmat_dc2.txt');
+unlabeledY = textread('gpcr_admat_dgc2.txt');
 
 N = 2;
 
@@ -217,7 +217,7 @@ end
  % v : drug-target interaction matrix
  % we take the largest value between targetPred and compPred
  
-v = textread('validation_set_en.txt');
+v = textread('validation_set_gpcr.txt');
 v = v(:,2:size(v,2));
 
  maxPred = max(targetPred',compPred);
@@ -252,6 +252,6 @@ AUC = trapz(xAUC,yAUC)
 %%% Calculating AUPR %%%
 
 xAUPR = yAUC;  %%%% Recall (Sensitivity)
-yAUPR = 1- falseP./(falseP + trueP + .000000001*(falseP==0 & trueP==0)); %%%% Precision
+yAUPR = 1- falseP./(falseP + trueP + .000000001*(falseP==0 & trueP==0)); %%%% Precision %%%%
 AUPR = trapz(xAUPR,yAUPR)
 
