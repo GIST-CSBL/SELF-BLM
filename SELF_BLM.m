@@ -2,7 +2,7 @@
 % To use k-medodis clustering, the Statistics and Machine Learning Toolbox is used.
 % k-medodis clustering 
 % N : divid integer  
-% target : similiarity matrix of target
+% target : similiarity matrix of target 
 % com : simliarity matrix of compound
 % unlabeledY : drug-target interaction matrix
 % labeledY : drug- target interaction matrix which has predicted negative interactions
