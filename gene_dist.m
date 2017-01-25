@@ -7,4 +7,4 @@ if isempty(target)
     target = target(:,2:(size(target,2)));
 end
 
-S = 1.000000001-target(i,j);
+S = 1.000000001-target(i,j); 
