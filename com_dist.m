@@ -7,4 +7,4 @@ if isempty(comp)
     comp = comp(:,2:(size(comp,2)));
 end
 
-S = 1.000000001-comp(i,j);
+S = 1.000000001-comp(i,j); 
